@@ -1,0 +1,9 @@
+
+web:
+        image: nginx
+        volumes:
+            - ~/nginxssl:/etc/nginx/conf.d
+            - ~/nginxssl:/etc/nginx/ssl
+            - ~/nginxssl:/usr/share/nginx/html
+        ports:
+            - "8080:443"      
